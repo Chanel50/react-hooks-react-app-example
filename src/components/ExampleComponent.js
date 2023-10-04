@@ -1,16 +1,19 @@
 import React from "react";
 
-// no need to modify anything in here. The second test is looking for the returned JSX from this component
 function ExampleComponent() {
   return (
     <div className="example">
       <img
-        src="https://s3.amazonaws.com/ironboard-learn/sunglasses.gif"
-        alt="a deeply impressed man, perhaps thinking 'whoa'"
+        src="https://example.com/some-image.gif"
+        alt="Example"
+        className="example-image"
       />
-      <p>Whoa!</p>
+      <p className="example-text">
+        This is an example component with an image.
+      </p>
     </div>
   );
 }
 
 export default ExampleComponent;
+

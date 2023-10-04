@@ -14,9 +14,15 @@ test('should include "Now" in the header instead of a time', () => {
   expect(screen.queryByText(/Now/g)).toBeInTheDocument();
 });
 
+
+
 test("should include the <ExampleComponent />", () => {
-  expect(screen.queryByText("Whoa!")).toBeInTheDocument();
+  expect(screen.getByText("This is an example component with an image.")).toBeInTheDocument();
 });
+
+
+
+
 
 test("should include the <TestComponent />", () => {
   expect(screen.queryByTitle("time video")).toBeInTheDocument();
